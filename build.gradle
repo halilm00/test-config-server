@@ -26,6 +26,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.springframework.cloud:spring-cloud-config-monitor'
+    implementation 'org.springframework.cloud:spring-cloud-starter-stream-kafka'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
