@@ -11,6 +11,16 @@ spring:
       name: configuser
       password: configPass$1234
   cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - http://localhost:29092
+          bindings:
+            springCloudBusOutput:
+              destination: springCloudBusTopic
+            springCloudBusInput:
+              destination: springCloudBusTopic
     bus:
       enabled: true
     config:
@@ -21,7 +31,6 @@ spring:
           refresh-rate: 3
           skipSslValidation: true # Git Server SSL validation can be disabled
           timeout: 10 #HTTP connection timeout (in seconds)
-
   kafka:
     bootstrap-servers:
       - http://localhost:29092
