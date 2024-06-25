@@ -18,7 +18,7 @@ spring:
         git:
           uri: https://github.com/halilm00/config-repo
           force-pull: true # pull the latest code from GIT in case the local repo has some issues and couldn't able to update the repo
-          refresh-rate: 3000
+          refresh-rate: 15
           skipSslValidation: true # Git Server SSL validation can be disabled
           timeout: 10 #HTTP connection timeout (in seconds)
 
